@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "MyGLView.h"
+
 @interface ViewController ()
 
 @end
@@ -16,6 +18,11 @@
 
 - (void)viewDidLoad
 {
+    MyGLView *renderView = [[MyGLView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.view = renderView;
+    [renderView release];
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

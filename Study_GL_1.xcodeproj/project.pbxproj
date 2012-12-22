@@ -18,6 +18,10 @@
 		AC1D3D9F1685EBAF00A667E3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC1D3D9E1685EBAF00A667E3 /* Default-568h@2x.png */; };
 		AC1D3DA21685EBAF00A667E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1D3DA11685EBAF00A667E3 /* ViewController.m */; };
 		AC1D3DA51685EBAF00A667E3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC1D3DA31685EBAF00A667E3 /* ViewController.xib */; };
+		AC1D3DAE1685EBD700A667E3 /* MyGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1D3DAD1685EBD700A667E3 /* MyGLView.m */; };
+		AC1D3DB01685EBF300A667E3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1D3DAF1685EBF300A667E3 /* OpenGLES.framework */; };
+		AC1D3DB21685EBF900A667E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1D3DB11685EBF900A667E3 /* QuartzCore.framework */; };
+		ACDE65BF16861C38004FC81C /* back1.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDE65BE16861C38004FC81C /* back1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,11 @@
 		AC1D3DA01685EBAF00A667E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AC1D3DA11685EBAF00A667E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AC1D3DA41685EBAF00A667E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		AC1D3DAC1685EBD700A667E3 /* MyGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGLView.h; sourceTree = "<group>"; };
+		AC1D3DAD1685EBD700A667E3 /* MyGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGLView.m; sourceTree = "<group>"; };
+		AC1D3DAF1685EBF300A667E3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		AC1D3DB11685EBF900A667E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ACDE65BE16861C38004FC81C /* back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1D3DB21685EBF900A667E3 /* QuartzCore.framework in Frameworks */,
+				AC1D3DB01685EBF300A667E3 /* OpenGLES.framework in Frameworks */,
 				AC1D3D891685EBAF00A667E3 /* UIKit.framework in Frameworks */,
 				AC1D3D8B1685EBAF00A667E3 /* Foundation.framework in Frameworks */,
 				AC1D3D8D1685EBAF00A667E3 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +84,8 @@
 		AC1D3D871685EBAF00A667E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC1D3DB11685EBF900A667E3 /* QuartzCore.framework */,
+				AC1D3DAF1685EBF300A667E3 /* OpenGLES.framework */,
 				AC1D3D881685EBAF00A667E3 /* UIKit.framework */,
 				AC1D3D8A1685EBAF00A667E3 /* Foundation.framework */,
 				AC1D3D8C1685EBAF00A667E3 /* CoreGraphics.framework */,
@@ -83,6 +96,7 @@
 		AC1D3D8E1685EBAF00A667E3 /* Study_GL_1 */ = {
 			isa = PBXGroup;
 			children = (
+				AC1D3DAB1685EBBA00A667E3 /* GL */,
 				AC1D3D971685EBAF00A667E3 /* AppDelegate.h */,
 				AC1D3D981685EBAF00A667E3 /* AppDelegate.m */,
 				AC1D3DA01685EBAF00A667E3 /* ViewController.h */,
@@ -96,6 +110,7 @@
 		AC1D3D8F1685EBAF00A667E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACDE65BE16861C38004FC81C /* back1.png */,
 				AC1D3D901685EBAF00A667E3 /* Study_GL_1-Info.plist */,
 				AC1D3D911685EBAF00A667E3 /* InfoPlist.strings */,
 				AC1D3D941685EBAF00A667E3 /* main.m */,
@@ -105,6 +120,15 @@
 				AC1D3D9E1685EBAF00A667E3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC1D3DAB1685EBBA00A667E3 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				AC1D3DAC1685EBD700A667E3 /* MyGLView.h */,
+				AC1D3DAD1685EBD700A667E3 /* MyGLView.m */,
+			);
+			name = GL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +187,7 @@
 				AC1D3D9D1685EBAF00A667E3 /* Default@2x.png in Resources */,
 				AC1D3D9F1685EBAF00A667E3 /* Default-568h@2x.png in Resources */,
 				AC1D3DA51685EBAF00A667E3 /* ViewController.xib in Resources */,
+				ACDE65BF16861C38004FC81C /* back1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +201,7 @@
 				AC1D3D951685EBAF00A667E3 /* main.m in Sources */,
 				AC1D3D991685EBAF00A667E3 /* AppDelegate.m in Sources */,
 				AC1D3DA21685EBAF00A667E3 /* ViewController.m in Sources */,
+				AC1D3DAE1685EBD700A667E3 /* MyGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +315,7 @@
 				AC1D3DAA1685EBAF00A667E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
